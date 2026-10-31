@@ -431,23 +431,6 @@ document.addEventListener('DOMContentLoaded', function () {
       const modalInstance = bootstrap.Modal.getInstance(modalEl);
       if (modalInstance) modalInstance.hide();
 
-      // Send to PHP backend in background if available
-      try {
-        fetch('api/apply.php', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            name: name,
-            phone: phone,
-            job: job,
-            age: document.getElementById('applyAge')?.value || '',
-            gov: city,
-            passport: document.getElementById('applyPassportStatus')?.value || '',
-            notes: notes
-          })
-        }).catch(() => {});
-      } catch (err) {}
-
       // Show success feedback
       const applyMsg = `تم استلام طلبك بنجاح يا ${name}!\nكود الطلب المبدئي هو: HS-${Math.floor(100000 + Math.random() * 900000)}\nسيتواصل معك مستشار التوظيف الإيطالي خلال 24 ساعة عبر الهاتف والواتساب لتحديد موعد المقابلة.`;
       
@@ -475,21 +458,6 @@ document.addEventListener('DOMContentLoaded', function () {
         showNotification('نقص بيانات', 'يرجى ملء جميع الحقول المطلوبة للتواصل معك بدقة.', 'warning');
         return;
       }
-
-      // Send to PHP backend in background if available
-      try {
-        fetch('api/contact.php', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            name: name,
-            phone: phone,
-            subject: subject,
-            gov: document.getElementById('contactGov')?.value || 'غير محدد',
-            message: message
-          })
-        }).catch(() => {});
-      } catch (err) {}
 
       const msgSuccess = `شكراً لتواصلك معنا يا ${name}. تم تسجيل رسالتك بنجاح وسيتواصل معك مستشار هلا النيل عبر الهاتف أو الواتساب فوراً.`;
       
