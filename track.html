@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>بوابة استعلام وتتبع عقود وتأشيرات إيطاليا | شركة هلا النيل</title>
+  <meta name="description" content="استعلم عن حالة عقد العمل أو تأشيرة إيطاليا وصدور تصريح النولا أوستا (Nulla Osta) برقم جواز السفر أو كود المعاملة الخاص بك لدى هلا النيل.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+  <link rel="stylesheet" href="assets/css/style.css?v=5.2">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar d-none d-lg-block">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center gap-3">
+          <span class="top-bar-license-badge">
+            <i class="fa-solid fa-certificate"></i>
+            ترخيص وزارة القوى العاملة رقم 912 شركات
+          </span>
+          <span class="text-white-50">|</span>
+          <span><i class="fa-regular fa-clock text-warning me-1"></i> مواعيد العمل: السبت - الخميس: 9:00 ص - 6:00 م</span>
+        </div>
+        <div class="d-flex align-items-center gap-4">
+          <a href="tel:+201018899770" class="d-flex align-items-center gap-1">
+            <i class="fa-solid fa-phone text-success"></i>
+            <span class="font-monospace dir-ltr fw-bold">0101 889 9770</span>
+          </a>
+          <a href="https://wa.me/201018899770" target="_blank" rel="noopener noreferrer" class="d-flex align-items-center gap-1 text-success fw-bold">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>واتساب الاستقدام</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-xl main-navbar" id="mainNavbar">
+    <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+    <div class="container-fluid px-lg-4 px-xxl-5">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="assets/images/logo-header.svg" alt="هلا النيل لإلحاق العمالة بالخارج" class="navbar-brand-logo">
+      </a>
+      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="تبديل القائمة">
+        <i class="fa-solid fa-bars-staggered fs-3 text-primary"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-xl-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">من نحن</a></li>
+          <li class="nav-item"><a class="nav-link fw-bold text-success" href="jobs.html">الوظائف المتاحة</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#steps">خطوات السفر</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#travelers">مسافرونا في إيطاليا</a></li>
+          <li class="nav-item"><a class="nav-link active" href="track.html">تتبع عقدك</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">تواصل معنا</a></li>
+        </ul>
+        <div class="d-flex align-items-center gap-2 mt-3 mt-xl-0">
+          <a href="contact.html" class="btn btn-primary px-3 py-2 rounded-pill">
+            <i class="fa-solid fa-phone me-1"></i> مساعدة فورية
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <div class="page-hero">
+    <div class="container">
+      <span class="badge bg-gold text-dark fw-bold px-3 py-2 rounded-pill mb-3">
+        <i class="fa-solid fa-satellite-dish me-1"></i> النظام الإلكتروني الموحد
+      </span>
+      <h1 class="fw-bold mb-3">بوابة استعلام وتتبع معاملات إيطاليا</h1>
+      <p class="text-white-50 max-w-700 mx-auto mb-0">
+        تابع مرحلة معاملتك: من فحص الملف، والتسجيل في فلوتسي، وصدور الـ Nulla Osta، وحتى استلام التأشيرة وتذكرة السفر.
+      </p>
+    </div>
+  </div>
+
+  <!-- Tracker Main Section -->
+  <section class="py-5">
+    <div class="container py-4">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="card border-0 shadow-lg rounded-4 p-4 p-md-5 bg-white">
+            <div class="text-center mb-4">
+              <div class="stat-icon bg-soft-green text-success mx-auto mb-3" style="width: 70px; height: 70px; font-size: 30px;">
+                <i class="fa-solid fa-passport"></i>
+              </div>
+              <h4 class="fw-bold text-dark">أدخل بيانات الاستعلام</h4>
+              <p class="text-muted small">اكتب رقم جواز السفر المكون من حرف و 8 أرقام أو كود طلب التوظيف المعطى لك من الشركة</p>
+            </div>
+
+            <div class="tracker-input-group d-flex align-items-center border mb-3">
+              <input type="text" id="trackPassportInput" class="form-control" placeholder="مثال: A12345678 أو HS-78921">
+              <button class="btn btn-primary px-4 py-3 rounded-pill flex-shrink-0" id="btnTrackContract">
+                <i class="fa-solid fa-magnifying-glass me-1"></i> استعلام فوري
+              </button>
+            </div>
+
+            <div class="small text-muted text-center mb-2">
+              <i class="fa-solid fa-circle-info text-primary me-1"></i> جرب إدخال الأرقام التجريبية: <span class="badge bg-light text-dark border font-monospace">A12345678</span> أو <span class="badge bg-light text-dark border font-monospace">HS-99881</span>
+            </div>
+
+            <!-- Result Dynamic Area -->
+            <div id="trackResultContainer" class="d-none"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer footer-compact">
+    <div class="container text-center text-white-50 small">
+      <ul class="footer-inline-links">
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="about.html">من نحن</a></li>
+        <li><a href="jobs.html">الوظائف المتاحة</a></li>
+        <li><a href="track.html">تتبع عقدك</a></li>
+        <li><a href="contact.html">تواصل معنا</a></li>
+      </ul>
+      <p class="mb-0">جميع الحقوق محفوظة © 2026 لشركة هلا النيل لإلحاق العمالة المصرية بالخارج (ترخيص رقم 912 شركات).</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/201018899770" target="_blank" rel="noopener noreferrer" class="floating-whatsapp" title="تواصل واتساب" aria-label="تواصل معنا عبر واتساب"><i class="fa-brands fa-whatsapp"></i></a>
+  <a href="#" class="back-to-top" id="backToTop" title="العودة لأعلى الصفحة" aria-label="العودة لأعلى الصفحة"><i class="fa-solid fa-arrow-up"></i></a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="assets/js/jobs-data.js?v=5.1"></script>
+  <script src="assets/js/main.js?v=5.1"></script>
+</body>
+</html>
+

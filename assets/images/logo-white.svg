@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 120" width="100%" height="100%">
+  <defs>
+    <linearGradient id="goldGradWhite" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffe699"/>
+      <stop offset="50%" stop-color="#e8be48"/>
+      <stop offset="100%" stop-color="#b88d22"/>
+    </linearGradient>
+    <linearGradient id="italyGreenW" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00b050"/>
+      <stop offset="100%" stop-color="#008037"/>
+    </linearGradient>
+    <linearGradient id="italyRedW" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff4757"/>
+      <stop offset="100%" stop-color="#d63031"/>
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(10, 10)">
+    <path d="M 50,5 L 88,20 C 88,60 50,92 50,95 C 50,92 12,60 12,20 Z" fill="#132742" stroke="url(#goldGradWhite)" stroke-width="2.5"/>
+    <path d="M 28,32 Q 50,22 72,32" fill="none" stroke="url(#italyGreenW)" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 32,38 Q 50,28 68,38" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 36,44 Q 50,34 64,44" fill="none" stroke="url(#italyRedW)" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 50,38 L 54,49 L 66,50 L 57,58 L 60,70 L 50,63 L 40,70 L 43,58 L 34,50 L 46,49 Z" fill="url(#goldGradWhite)"/>
+  </g>
+
+  <g transform="translate(125, 20)">
+    <text x="0" y="44" font-family="'Cairo', 'Tajawal', sans-serif" font-weight="900" font-size="42" fill="#ffffff" letter-spacing="-0.5">
+      هلا النيل
+    </text>
+    <text x="2" y="70" font-family="'Cairo', sans-serif" font-weight="700" font-size="15.5" fill="#48bb78">
+      لإلحاق العمالة المصرية بالخارج
+    </text>
+    <text x="3" y="88" font-family="'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="11" fill="#cbd5e0" letter-spacing="1.5">
+      HALA AL-NILE • ITALY RECRUITMENT AGENCY
+    </text>
+  </g>
+
+  <g transform="translate(435, 30)">
+    <rect x="0" y="0" width="95" height="42" rx="6" fill="rgba(255,255,255,0.08)" stroke="#48bb78" stroke-width="1"/>
+    <text x="47" y="18" font-family="'Cairo', sans-serif" font-size="10.5" font-weight="700" fill="#48bb78" text-anchor="middle">ترخيص معتمد</text>
+    <text x="47" y="33" font-family="'Cairo', sans-serif" font-size="11.5" font-weight="900" fill="#ffffff" text-anchor="middle">رقم 912 شركات</text>
+  </g>
+</svg>
+
